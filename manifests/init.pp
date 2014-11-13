@@ -35,7 +35,14 @@
 #
 # Copyright 2014 Your name here, unless otherwise noted.
 #
-class beaver {
+class beaver(
 
+  $ensure = $beaver::params::ensure,
+
+) inherits beaver::params {
+  
+  if ! ($ensure in [ 'present', 'absent' ]) {
+    fail("\"${ensure}\" invalid value for parameter 'ensure'. Valid parameters are: 'present absent'")
+  }
 
 }
