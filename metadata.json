@@ -1,0 +1,14 @@
+{
+  "name": "bazzie-beaver",
+  "version": "0.0.1",
+  "author": "bazzie",
+  "summary": "Puppet module to manage install and configuration of Beaver",
+  "license": "Apache 2.0",
+  "source": "https://github.com/bazzie/puppet-beaver.git",
+  "issues_url": "https://github.com/bazzie/puppet-beaver/issues",
+  "project_page": "https://github.com/bazzie/puppet-beaver",
+  "dependencies": [
+    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+  ]
+}
+
