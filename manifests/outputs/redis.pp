@@ -4,17 +4,16 @@ define beaver::output::redis(
   $db        = 0,
 ) {
 
-  #### Validate parameters
   if $host {
     validate_string($host)
   }
 
   if ! is_numeric($port) {
-    fail("\"${port}\" is not a valid port parameter value")
+    fail("\"${port}\" Invalid value for parameter 'port'. Should be numeric.")
   }
 
   if ! is_numeric($db) {
-    fail("\"${db}\" is not a valid db parameter value")
+    fail("\"${db}\" Invalid value for parameter 'db'. Should be numeric.")
   }
 
   $opt_url = "redis_url: redis://${host}:${port}/${db}\n"
