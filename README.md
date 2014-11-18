@@ -15,9 +15,13 @@
 
 ## Overview
 
-A one-maybe-two sentence summary of what the module does/what problem it solves.
-This is your 30 second elevator pitch for your module. Consider including
-OS/Puppet version it works with.
+This module installs and configures Beaver  logshipper for Logstash.
+
+Beaver: https://github.com/josegonzalez/python-beaver
+
+Inspired on the great Beaver module from Richard Pijnenburg <mailto:richard@ispavailability.com> 
+https://github.com/electrical/puppet-beaver/tree/master/manifests
+
 
 ## Module Description
 
