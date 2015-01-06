@@ -46,6 +46,7 @@ class beaver(
   $max_failure   = 7,
   $hostname      = $::fqdn,
   $transport     = 'redis'
+  $redis_host	= beaver::params::redis_host
 
 ) inherits beaver::params {
   
