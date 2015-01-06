@@ -4,4 +4,6 @@ class beaver::install {
     ensure => present,
   }
 
+
+
 }
