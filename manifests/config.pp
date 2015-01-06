@@ -1,4 +1,8 @@
-class beaver::config {
+class beaver::config(
+
+  $redis_host = beaver::params::redis_host
+
+){
 
   file { '/etc/beaver.conf':
     ensure => 'file',
