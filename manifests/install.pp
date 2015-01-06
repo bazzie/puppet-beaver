@@ -4,9 +4,9 @@ class beaver::install {
     ensure => present,
   }
 
-  package { "$package_name":
+  package { 'beaver':
     ensure => present,
-    provider => "$package_provider",
+    provider => 'pip',
     notify => Class['beaver::service'],
   }
 
