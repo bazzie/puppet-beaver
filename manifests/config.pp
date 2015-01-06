@@ -1,6 +1,6 @@
 class beaver::config(
 
-  $redis_host = beaver::params::redis_host
+  $redis_host = beaver::redis_host
 
 ){
 
