@@ -37,16 +37,25 @@
 #
 class beaver(
 
-  $ensure = $beaver::params::ensure,
-  $status = $beaver::params::status,
-  $format = $beaver::params::format,
-  $version       = false,
-  $format        = 'json',
-  $respawn_delay = 3,
-  $max_failure   = 7,
-  $hostname      = $::fqdn,
-  $transport     = 'redis',
-  $redis_host	= beaver::params::redis_host
+  $enable = $beaver::params::enable,
+  $package_name = $beaver::params::package_name,
+  $package_provider = $beaver::params::package_provider,
+  $python_version = $beaver::params::python_version,
+  $home = $beaver::params::home,
+  $venv = $beaver::params::venv,
+  $user = $beaver::params::user,
+  $group = $beaver::params::group,
+  $version = $beaver::params::version,
+  $redis_host = $beaver::params::redis_host,
+  $redis_db = $beaver::params::redis_db,
+  $redis_port = $beaver::params::redis_port,
+  $redis_namespace = $beaver::params::redis_namespace,
+  $queue_timeout = $beaver::params::queue_timeout,
+  $logstash_version = $beaver::params::logstash_version,
+  $enable_sincedb = $beaver::params::enable_sincedb,
+  $sincedb_path = $beaver::params::sincedb_path,
+  $multiline_regex_after = $beaver::params::multiline_regex_after,
+  $multiline_regex_before = $beaver::params::multiline_regex_before,
 
 ) inherits beaver::params {
   
