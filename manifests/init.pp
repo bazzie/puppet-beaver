@@ -75,6 +75,9 @@ class beaver(
     fail("\"${transport}\"  invalid value for parameter 'transport'. Valid parameters are: 'redis rabbitmq zmq udp mqtt sqs'")
   }
 
-
+  class { 'beaver::install': } ->
+  class { 'beaver::config': } ~>
+  class { 'beaver::service': } ->
+  Class['beaver']
 
 }
